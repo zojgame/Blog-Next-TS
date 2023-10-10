@@ -1,0 +1,1 @@
+export { PostsComponent } from "./Posts";

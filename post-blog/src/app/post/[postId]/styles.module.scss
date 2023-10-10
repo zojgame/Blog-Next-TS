@@ -1,0 +1,81 @@
+.post_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
+  min-height: 100vh;
+  gap: 20px;
+
+  .post_user {
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    gap: 10px;
+    font-size: x-large;
+    align-self: flex-end;
+    margin: 0 6rem;
+  }
+
+  .post_title {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    font-weight: 800;
+    color: black;
+    font-size: 50px;
+  }
+
+  .post_body {
+    margin: 2rem 6rem;
+    margin-bottom: 8rem;
+    align-self: flex-start;
+    font-size: 2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+    align-self: flex-start;
+    margin: 0 6rem;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .comments_container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 12rem);
+    gap: 25px;
+
+    .comment {
+      display: flex;
+      padding: 5px 10px;
+      gap: 10px;
+      align-items: center;
+
+      .content {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        .email {
+          display: flex;
+          gap: 15px;
+          font-weight: 700;
+          align-items: center;
+          font-size: large;
+        }
+
+        .name {
+          letter-spacing: 3px;
+          font-size: 20px;
+        }
+
+        .body {
+          font-size: large;
+        }
+      }
+    }
+  }
+}
